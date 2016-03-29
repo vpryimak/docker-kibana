@@ -10,7 +10,7 @@ RUN chmod +x /usr/local/sbin/start.sh
 # Install Kibana
 RUN cd /tmp \
     && apt-get install -y curl \
-    && curl -O https://download.elasticsearch.org/kibana/kibana/kibana-4.0.2-linux-x64.tar.gz \
+    && curl -O https://download.elastic.co/kibana/kibana/kibana-4.4.2-linux-x64.tar.gz \
     && tar xzf kibana-*.tar.gz \
     && rm kibana-*.tar.gz \
     && mv kibana-* /opt/kibana
