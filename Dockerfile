@@ -4,6 +4,7 @@ MAINTAINER Viacheslav Pryimak <vpryimak@intropro.com"
 ################## BEGIN INSTALLATION ######################
 ADD ./src /
 RUN chmod +x /usr/local/sbin/start.sh
+RUN apt-get update
 RUN cd /tmp \
     && apt-get install -y curl \
     && curl -O https://download.elastic.co/kibana/kibana/kibana-4.4.2-linux-x64.tar.gz \
